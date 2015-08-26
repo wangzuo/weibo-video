@@ -1,0 +1,29 @@
+{
+  "name": "weibo-video",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Wang Zuo",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.61.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangzuo/weibo-video.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wangzuo/weibo-video/issues"
+  },
+  "homepage": "https://github.com/wangzuo/weibo-video#readme",
+  "description": "weibo video downloader",
+  "keywords": [
+    "weibo",
+    "video",
+    "dowload",
+    "dowloader"
+  ]
+}
