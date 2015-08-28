@@ -1,9 +1,12 @@
 {
   "name": "weibo-video",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "weibo-video": "cli.js"
   },
   "author": "Wang Zuo",
   "license": "MIT",
