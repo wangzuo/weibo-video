@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-var download = require('./');
+var fs = require('fs');
+var video = require('./');
 var argv = process.argv;
 
-download(argv[2], argv[3]);
+video(argv[2]).pipe(fs.createWriteStream(argv[3]));
