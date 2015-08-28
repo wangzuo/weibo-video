@@ -1,6 +1,6 @@
 {
   "name": "weibo-video",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,19 +14,19 @@
     "request": "^2.61.0"
   },
   "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wangzuo/weibo-video.git"
-  },
-  "bugs": {
-    "url": "https://github.com/wangzuo/weibo-video/issues"
-  },
-  "homepage": "https://github.com/wangzuo/weibo-video#readme",
   "description": "weibo video downloader",
   "keywords": [
     "weibo",
     "video",
     "dowload",
     "dowloader"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/esportsguy/weibo-video.git"
+  },
+  "bugs": {
+    "url": "https://github.com/esportsguy/weibo-video/issues"
+  },
+  "homepage": "https://github.com/esportsguy/weibo-video#readme"
 }
