@@ -1,11 +1,11 @@
 # weibo-video
 weibo video downloader
-### Command line usage
+#### Command line usage
 ``` sh
 npm install weibo-video -g
 weibo-video http://video.weibo.com/show?fid=1034:56cf9418a34dfb34292c0ede3a4ea9a5 output.mp4
 ```
-### Node stream usage
+#### Node stream usage
 ``` sh
 npm install weibo-video
 ```
@@ -15,7 +15,11 @@ var video = require('weibo-video');
 video('http://video.weibo.com/show?fid=1034:56cf9418a34dfb34292c0ede3a4ea9a5').pipe(fs.createWriteStream('ouput.mp4'));
 ```
 
-### Sample usage with ffmpeg
+#### Sample usage with ffmpeg (fluent-ffmpeg)
+``` sh
+npm install fluent-ffmpeg
+```
+
 ``` javascript
 var video = require('weibo-video');
 var ffmpeg = require('fluent-ffmpeg');
@@ -26,5 +30,5 @@ ffmpeg(video('http://video.weibo.com/show?fid=1034:56cf9418a34dfb34292c0ede3a4ea
   .output('output.mp4')
   .run();
 ```
-### License
+#### License
 MIT

@@ -1,4 +1,3 @@
-var fs = require('fs');
 var url = require('url');
 var request = require('request');
 var PassThrough = require('stream').PassThrough;
@@ -24,7 +23,14 @@ function Video(link) {
         playlist[0]
       ].join('');
 
-      request(videoUrl).pipe(stream);
+      console.log('downloading from', videoUrl);
+      var req = request(videoUrl);
+
+      req.on('response', function(resp) {
+        stream.emit('response', resp);
+      });
+
+      req.pipe(stream);
     });
   });
 
