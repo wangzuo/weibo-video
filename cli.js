@@ -2,7 +2,6 @@
 
 var fs = require('fs');
 var progress = require('stream-progressbar');
-var PassThrough = require('stream').PassThrough;
 var video = require('./');
 
 var argv = process.argv;

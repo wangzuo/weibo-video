@@ -2,7 +2,7 @@ var url = require('url');
 var request = require('request');
 var PassThrough = require('stream').PassThrough;
 
-function Video(link) {
+module.exports = function(link) {
   var stream = new PassThrough();
 
   request(link, function(err, res, html) {
@@ -35,6 +35,4 @@ function Video(link) {
   });
 
   return stream;
-}
-
-module.exports = Video;
+};
